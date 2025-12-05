@@ -1,9 +1,9 @@
 # main text of home
-title: John Doe
+title: 陈玉明
 bio: A Person who travels the world eating noodles
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: 个人简介/项目介绍
 
 # if it's an external image, update below for true
 # better with square images
@@ -20,7 +20,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://chenyomi.github.io/indigo
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -37,9 +37,9 @@ disqus:
 facebook: myfacebook
 twitter: mytwitter
 instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+linkedin: 408550179@qq.com
+github: https://github.com/chenyomi
+email: 408550179@qq.com
 
 authors:
   johndoe:
