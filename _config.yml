@@ -1,6 +1,6 @@
 # main text of home
 title: 陈玉明
-bio: A Person who travels the world eating noodles
+bio: 一个前端开发职业牛马
 
 # twitter summary info
 description: 个人简介/项目介绍
@@ -20,7 +20,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://chenyomi.github.io/indigo
+url: https://chenyomi.github.io
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -40,6 +40,7 @@ instagram: myinstagram
 linkedin: 408550179@qq.com
 github: https://github.com/chenyomi
 email: 408550179@qq.com
+wechat: cym5640
 
 authors:
   johndoe:
