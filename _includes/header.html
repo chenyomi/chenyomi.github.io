@@ -7,12 +7,20 @@
 {% if showHeader == true %}
     <header class="header-home {% if site.animation %}animated{% endif %}">
         {% if site.about %}
-            <a class="link" href="{{ site.url }}/about">
-                <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            <a class="link" href="{{ "/about" | relative_url }}">
+                {% if site.picture %}
+                    <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.picture | relative_url }}{% endif %}" />
+                {% else %}
+                    <span class="selfie avatar-text" aria-label="{{ site.title }}">YM</span>
+                {% endif %}
             </a>
         {% else %}
             <span class="link">
-                <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+                {% if site.picture %}
+                    <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.picture | relative_url }}{% endif %}" />
+                {% else %}
+                    <span class="selfie avatar-text" aria-label="{{ site.title }}">YM</span>
+                {% endif %}
             </span>
         {% endif %}
 

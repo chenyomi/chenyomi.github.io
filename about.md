@@ -4,7 +4,11 @@ layout: page
 ---
 
 <section class="about-profile">
-    <img class="profile-image" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}">
+    {% if site.picture %}
+        <img class="profile-image" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.picture | relative_url }}{% endif %}">
+    {% else %}
+        <span class="profile-image avatar-text" aria-label="{{ site.title }}">YM</span>
+    {% endif %}
     <div>
         <p class="eyebrow">About Me</p>
         <h2>我是一名前端开发工程师，擅长把复杂交互做成可维护、可交付的产品。</h2>
