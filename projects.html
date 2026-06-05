@@ -2,17 +2,100 @@
 layout: page
 title: Projects
 ---
-<section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
-            {% if post.hidden != true %}
-                <div class="item {% if post.star %}star{% endif %}">
-                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                        <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                        <h3 class="title">{{ post.title }}</h3>
-                    </a>
-                </div>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
+
+<section class="projects-intro">
+    <p class="eyebrow">Project Directions</p>
+    <h2>这里展示的是可公开的项目类型和技术成果，真实公司、客户和内部业务信息已做匿名处理。</h2>
+    <p>
+        我更关注项目背后的工程问题：如何抽象复杂交互、如何组织组件和数据流、如何兼顾视觉表现与交付效率。
+    </p>
+</section>
+
+<section class="case-list">
+    <article class="case-card">
+        <div class="case-meta">Canvas / Editor / Visualization</div>
+        <h3>图形编辑器与可视化搭建工具</h3>
+        <p>
+            面向可视化配置场景，设计画布元素、拖拽编排、属性面板、数据绑定、预览渲染等模块，
+            让非固定页面可以通过配置方式快速组合。
+        </p>
+        <ul class="tag-list">
+            <li>Vue 3</li>
+            <li>Canvas</li>
+            <li>组件配置</li>
+            <li>拖拽交互</li>
+            <li>数据源</li>
+        </ul>
+    </article>
+
+    <article class="case-card">
+        <div class="case-meta">Three.js / WebGL / Industrial UI</div>
+        <h3>工业 3D 可视化应用</h3>
+        <p>
+            将 3D 模型、设备状态和业务数据结合起来，处理模型导入、材质灯光、事件拾取、状态切换和渲染性能，
+            用 Web 技术承载工业产品展示与操作辅助。
+        </p>
+        <ul class="tag-list">
+            <li>Three.js</li>
+            <li>WebGL</li>
+            <li>模型交互</li>
+            <li>性能优化</li>
+        </ul>
+    </article>
+
+    <article class="case-card">
+        <div class="case-meta">Dashboard Builder / Low-code</div>
+        <h3>低代码看板设计器</h3>
+        <p>
+            支持多种 grid 布局、图表拖拽、静态和动态边框、数据源配置、移动端适配等能力，
+            让数据看板从一次性页面开发转为可复用的搭建流程。
+        </p>
+        <ul class="tag-list">
+            <li>ECharts</li>
+            <li>Monaco Editor</li>
+            <li>Grid Layout</li>
+            <li>低代码</li>
+        </ul>
+    </article>
+
+    <article class="case-card">
+        <div class="case-meta">Admin / H5 / App</div>
+        <h3>多端业务应用</h3>
+        <p>
+            负责过 Web 管理系统、移动端 H5、小程序、uniapp、Hybrid App 和桌面端应用开发，
+            熟悉从工程搭建、接口封装、业务模块到打包发布的完整链路。
+        </p>
+        <ul class="tag-list">
+            <li>Vue</li>
+            <li>uniapp</li>
+            <li>小程序</li>
+            <li>Electron</li>
+            <li>Hybrid App</li>
+        </ul>
+    </article>
+
+    <article class="case-card">
+        <div class="case-meta">Management System / Data</div>
+        <h3>中后台与数据可视化系统</h3>
+        <p>
+            构建过权限、菜单、表单、地图、图表、文件直传、Socket 通信、虚拟滚动等常见中后台能力，
+            也能沉淀模板和公共组件来支撑后续迭代。
+        </p>
+        <ul class="tag-list">
+            <li>Element</li>
+            <li>Ant Design Vue</li>
+            <li>Pinia</li>
+            <li>Socket</li>
+            <li>地图</li>
+        </ul>
+    </article>
+</section>
+
+<section class="portfolio-section contact-panel">
+    <p class="eyebrow">More</p>
+    <h2>部分技术记录会持续整理在博客中。</h2>
+    <div class="hero-actions">
+        <a class="button primary" href="{{ site.blog-url }}" target="_blank" rel="noopener">查看技术记录</a>
+        <a class="button" href="mailto:{{ site.email }}">联系我</a>
+    </div>
 </section>
