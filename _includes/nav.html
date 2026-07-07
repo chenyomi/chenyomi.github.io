@@ -2,14 +2,14 @@
     <ul class="list">
         {% if page.title != "Home" %}
             <li class="item">
-                <a class="link" href="{{ "/" | relative_url }}">首页 / Home</a>
+                <a class="link" href="{{ "/" | relative_url }}"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
             </li>
         {% endif %}
 
         {% if site.blog == true %}
             {% if page.title != "Blog" %}
                 <li class="item">
-                    <a class="link" href="{{ site.blog-url }}">博客 / Blog</a>
+                    <a class="link" href="{{ site.blog-url }}"><span class="i18n-zh">博客</span><span class="i18n-en">Blog</span></a>
                 </li>
             {% endif %}
         {% endif %}
@@ -17,7 +17,7 @@
         {% if site.projects == true %}
             {% if page.title != "Projects" %}
                 <li class="item">
-                    <a class="link" href="{{ "/projects" | relative_url }}">项目 / Projects</a>
+                    <a class="link" href="{{ "/projects" | relative_url }}"><span class="i18n-zh">项目</span><span class="i18n-en">Projects</span></a>
                 </li>
             {% endif %}
         {% endif %}
@@ -25,7 +25,7 @@
         {% if site.about == true %}
             {% if page.title != "About" %}
                 <li class="item">
-                    <a class="link" href="{{ "/about" | relative_url }}">关于 / About</a>
+                    <a class="link" href="{{ "/about" | relative_url }}"><span class="i18n-zh">关于</span><span class="i18n-en">About</span></a>
                 </li>
             {% endif %}
         {% endif %}
@@ -35,5 +35,9 @@
                 <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
             </li>
         {% endif %}
+
+        <li class="item lang-switcher-item">
+            {% include lang-switcher.html %}
+        </li>
     </ul>
 </nav>

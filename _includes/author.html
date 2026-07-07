@@ -9,7 +9,10 @@
 
     <div class="toright">
         <h4 class="name">{{ site.authors[page.author].name }}</h4>
-        <p class="bio">{{ site.authors[page.author].bio }}</p>
+        <p class="bio">
+            <span class="i18n-zh">{{ site.authors[page.author].bio-zh }}</span>
+            <span class="i18n-en">{{ site.authors[page.author].bio-en }}</span>
+        </p>
 
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->

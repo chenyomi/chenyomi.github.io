@@ -39,42 +39,39 @@
     letter-spacing: 1.8px
     text-transform: uppercase
 
-.locale-en
-    display: block
-    margin-top: 10px
-    color: $gama
-    font-size: .78em
-    font-weight: 400
-    letter-spacing: 0
-    line-height: 1.5
-    text-transform: none
+html[data-lang="zh"] .i18n-en
+    display: none !important
 
-h2 .locale-en,
-h3 .locale-en
-    margin-top: 8px
+html[data-lang="en"] .i18n-zh
+    display: none !important
 
-p .locale-en
-    display: inline
-    margin-top: 0
-    margin-left: .35em
+.lang-switch
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    min-width: 42px
+    min-height: 32px
+    padding: 0 10px
+    border: 1px solid $epsilon
+    border-radius: 999px
+    color: $beta
+    background: rgba($omega, .82)
+    font-family: inherit
+    font-size: 1.2rem
+    font-weight: 700
+    letter-spacing: .5px
+    cursor: pointer
+    transition: transform .2s ease, border-color .2s ease, color .2s ease, background .2s ease
 
-    &:before
-        content: "/ "
-        color: $epsilon
+    &:hover
+        transform: translateY(-1px)
+        border-color: $delta
+        color: $delta
 
-.lead .locale-en,
-.contact-panel .locale-en,
-.about-profile .locale-en,
-.projects-intro .locale-en,
-.feature-card .locale-en,
-.project-card .locale-en,
-.case-card .locale-en
-    display: block
-    margin-top: 12px
-    margin-left: 0
-
-    &:before
-        content: none
+.lang-switcher-standalone
+    display: flex
+    justify-content: flex-end
+    padding: 16px 0 0
 
 .avatar-text
     display: inline-flex
