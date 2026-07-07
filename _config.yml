@@ -1,9 +1,9 @@
 # main text of home
 title: 陈玉明
-bio: 9 年经验前端开发工程师，专注图形编辑、数据可视化、多端应用与工业级 Web 体验
+bio: 9 年经验前端开发工程师，专注图形编辑、数据可视化、多端应用与工业级 Web 体验 / 9-year frontend engineer focused on visual editors, data visualization, multi-platform apps, and industrial web experiences
 
 # twitter summary info
-description: 陈玉明的个人主页，展示前端开发、图形编辑、Three.js/WebGL、Vue、低代码看板、小程序和多端应用相关经验。
+description: 陈玉明的个人主页，展示前端开发、图形编辑、Three.js/WebGL、Vue、低代码看板、小程序和多端应用相关经验。 / Yuming Chen's portfolio — frontend development, visual editors, Three.js/WebGL, Vue, low-code dashboards, mini programs, and multi-platform apps.
 
 # if it's an external image, update below for true
 # better with square images
@@ -41,12 +41,12 @@ blog-url: https://408550179s-organization.gitbook.io/blog
 authors:
   johndoe:
     name: 陈玉明
-    bio: 前端开发工程师，关注图形编辑、数据可视化和多端应用。
+    bio: 前端开发工程师，关注图形编辑、数据可视化和多端应用。 / Frontend engineer focused on visual editing, data visualization, and multi-platform apps.
     external-image: false
     picture: assets/images/profile.jpg
   jamesfoster:
     name: 陈玉明
-    bio: 前端开发工程师，关注图形编辑、数据可视化和多端应用。
+    bio: 前端开发工程师，关注图形编辑、数据可视化和多端应用。 / Frontend engineer focused on visual editing, data visualization, and multi-platform apps.
     external-image: false
     picture: assets/images/profile.jpg
 

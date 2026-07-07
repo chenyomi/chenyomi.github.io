@@ -39,6 +39,43 @@
     letter-spacing: 1.8px
     text-transform: uppercase
 
+.locale-en
+    display: block
+    margin-top: 10px
+    color: $gama
+    font-size: .78em
+    font-weight: 400
+    letter-spacing: 0
+    line-height: 1.5
+    text-transform: none
+
+h2 .locale-en,
+h3 .locale-en
+    margin-top: 8px
+
+p .locale-en
+    display: inline
+    margin-top: 0
+    margin-left: .35em
+
+    &:before
+        content: "/ "
+        color: $epsilon
+
+.lead .locale-en,
+.contact-panel .locale-en,
+.about-profile .locale-en,
+.projects-intro .locale-en,
+.feature-card .locale-en,
+.project-card .locale-en,
+.case-card .locale-en
+    display: block
+    margin-top: 12px
+    margin-left: 0
+
+    &:before
+        content: none
+
 .avatar-text
     display: inline-flex
     align-items: center
