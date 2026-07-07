@@ -45,6 +45,12 @@ html[data-lang="zh"] .i18n-en
 html[data-lang="en"] .i18n-zh
     display: none !important
 
+.lang-switcher-fixed
+    position: fixed
+    top: 16px
+    right: 16px
+    z-index: 100
+
 .lang-switch
     display: inline-flex
     align-items: center
@@ -67,11 +73,6 @@ html[data-lang="en"] .i18n-zh
         transform: translateY(-1px)
         border-color: $delta
         color: $delta
-
-.lang-switcher-standalone
-    display: flex
-    justify-content: flex-end
-    padding: 16px 0 0
 
 .avatar-text
     display: inline-flex
