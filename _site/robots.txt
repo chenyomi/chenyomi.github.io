@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /404.html
+Disallow: /tags/
+
+Sitemap: http://chenyomi.top/sitemap.xml

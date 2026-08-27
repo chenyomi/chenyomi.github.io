@@ -1,2 +1,11 @@
+---
+permalink: /robots.txt
+layout: null
+sitemap: false
+---
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /404.html
+Disallow: /tags/
+
+Sitemap: {{ site.url }}/sitemap.xml

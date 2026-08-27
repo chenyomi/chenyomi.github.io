@@ -1,13 +1,13 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+<nav class="{% if page.page_id == "home" %}nav-home{% else %}nav{% endif %}">
     <ul class="list">
-        {% if page.title != "Home" %}
+        {% if page.page_id != "home" %}
             <li class="item">
                 <a class="link" href="{{ "/" | relative_url }}"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
             </li>
         {% endif %}
 
         {% if site.blog == true %}
-            {% if page.title != "Blog" %}
+            {% if page.page_id != "blog" %}
                 <li class="item">
                     <a class="link" href="{{ site.blog-url }}"><span class="i18n-zh">博客</span><span class="i18n-en">Blog</span></a>
                 </li>
@@ -15,7 +15,7 @@
         {% endif %}
 
         {% if site.projects == true %}
-            {% if page.title != "Projects" %}
+            {% if page.page_id != "projects" %}
                 <li class="item">
                     <a class="link" href="{{ site.github-pages-url }}/projects/"><span class="i18n-zh">项目</span><span class="i18n-en">Projects</span></a>
                 </li>
@@ -23,7 +23,7 @@
         {% endif %}
 
         {% if site.about == true %}
-            {% if page.title != "About" %}
+            {% if page.page_id != "about" %}
                 <li class="item">
                     <a class="link" href="{{ "/about" | relative_url }}"><span class="i18n-zh">关于</span><span class="i18n-en">About</span></a>
                 </li>

@@ -1,7 +1,7 @@
-{% if page.title == "Home"
-   or page.title == "Blog"
-   or page.title == "Projects"
-   or page.title == "Tags"
+{% if page.page_id == "home"
+   or page.page_id == "blog"
+   or page.page_id == "projects"
+   or page.page_id == "tags"
 %}{% assign showHeader = true %}{% endif %}
 
 {% if showHeader == true %}

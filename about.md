@@ -1,6 +1,9 @@
 ---
-title: About
+title: 关于我
 layout: page
+page_id: about
+permalink: /about/
+description: 关于陈玉明：9 年前端开发经验，擅长图形编辑器与可视化搭建、工业级 Web 与 3D 展示、多端应用开发，以及中后台与数据可视化系统。
 ---
 
 <section class="about-profile">
